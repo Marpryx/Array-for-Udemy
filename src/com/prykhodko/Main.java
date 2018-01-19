@@ -1,6 +1,11 @@
+//////////////////////////////////////////////////////////////////////
+// The simple program that sorts a list of integers in descending   //
+// order (from highest value to smallest). The numbers to sort are  //
+// read from the keyboard.                                          //
+//                                                                  //
+/////////////////////////////////////////////////////////////////////
+
 package com.prykhodko;
-
-
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -13,10 +18,6 @@ public class Main {
         int[] array = getIntegers(5);
         int[]sortedArray = sortIntegers(array);
         printArray(sortedArray);
-
-//        System.out.println("Enter the numbers: ");
-
-
 
     }
 
@@ -38,7 +39,7 @@ public class Main {
             counter++;
 
         }
-
+// One more solution by using for loop
 //        for(int i=0; i<array.length; i++){
 //            System.out.println("Element # " + i + " has value: " + array[i]);
 //        }
@@ -49,12 +50,6 @@ public class Main {
         int temp;
 
         int[] sortedArray = Arrays.copyOf(array, array.length);
-
-//        int[]sortedArray = new int[array.length];
-//
-//        for(int i=0; i<array.length; i++){
-//            sortedArray[i] = array[i];
-//        }
 
         boolean flag = true;
         while(flag){
